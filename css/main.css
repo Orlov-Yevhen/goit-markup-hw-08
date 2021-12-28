@@ -15,6 +15,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -23,6 +25,18 @@ img {
 
 .link {
   text-decoration: none;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 :root {
@@ -54,10 +68,29 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .btn {
@@ -496,25 +529,52 @@ body {
   color: var(--white-color);
 }
 
-.benefits {
+/* .benefits {
   padding-top: 94px;
+} */
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.benefits__list {
-  display: flex;
-  flex-direction: row;
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    flex-wrap: unset;
+  }
 }
 
-.benefits__item:not(:last-child) {
+/* .benefits__item:not(:last-child) {
   margin-right: 30px;
+} */
+.benefits__item {
+  width: 100%;
 }
 
-.benefits__item {
-  width: 270px;
+@media screen and (min-width: 480px) {
+  .benefits__item {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
 
 .benefits__box {
-  height: 120px;
+  /* height: 120px; */
+  padding: 25px 0 25px 0;
   background-color: #f5f4fa;
   border-radius: 4px;
   display: flex;
@@ -530,7 +590,14 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--second-title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__subtitle {
+    text-align: start;
+  }
 }
 
 .benefits__text {
