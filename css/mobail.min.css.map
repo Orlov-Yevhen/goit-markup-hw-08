@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/layout/mobail.scss"
+    ],
+    "names": [],
+    "file": "mobail.min.css"
+}
