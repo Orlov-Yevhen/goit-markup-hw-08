@@ -23,7 +23,7 @@
   <body>
     <!---------------------HEADER---------------------------->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="nav">
           <a class="header__logo link" lang="en" href="./"
@@ -50,7 +50,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="header__contacts">
+          <li class="header__item">
             <a class="header__tel link" href="tel:+380961111111">
               <svg class="header__tel--icons" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
@@ -59,9 +59,61 @@
             >
           </li>
         </ul>
+        <button tupe="button" class="mob__menu-open">
+          <svg class="mob__icon" width="24" height="16">
+            <use href="images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-      <div class="line"></div>
-    </header> -->
+    </header>
+
+    <!-------------------- MOBILE --------------------->
+
+    <div class="mob__menu is-hidden">
+      <div class="container">
+        <div class="mob__menu-top">
+          <button tupe="button" class="mob__menu-close">
+            <svg class="mob__icon" width="19" height="19">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob__list list">
+            <li class="mob__item">
+              <a class="mob__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="mob__item">
+              <a class="mob__link link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob__item">
+              <a class="mob__link link" href="#0">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob__menu-bottom"></div>
+        <ul class="list mob__list-conect">
+          <li class="mob__item-conect">
+            <a class="mob__tel link" href="tel:+380961111111"> +38 096 111 11 11</a>
+          </li>
+          <li class="mob__item-conect">
+            <a class="mob__mail link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mob__list-social list">
+          <li class="mob__item-social">
+            <a class="mob__link-social link" href="">Instagram</a>
+          </li>
+          <li class="mob__item-social">
+            <a class="mob__link-social link" href="">Twitter</a>
+          </li>
+          <li class="mob__item-social">
+            <a class="mob__link-social link" href="">Facebook</a>
+          </li>
+          <li class="mob__item-social">
+            <a class="mob__link-social link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!---------------------PORTFOLIO---------------------------->
 
@@ -264,7 +316,7 @@
 
     <!---------------------FOOTER---------------------------->
 
-    <!--  <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container">
         <div class="adress-container">
           <a class="footer__logo link" lang="en" href="./"
@@ -326,16 +378,19 @@
         <div class="footer-join">
           <p class="footer-join__text">Подпишитесь на рассылку</p>
           <form class="footer-join__form">
-            <input type="email" name="email" placeholder="E-mail" class="footer-join__email" />
-            <button class="footer-join__submit" type="submit">
-              Подписаться
-              <svg class="footer-join__icone" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+            <div class="footer-join__wrap">
+              <input type="email" name="email" placeholder="E-mail" class="footer-join__email" />
+              <button class="footer-join__submit" type="submit">
+                Подписаться
+                <svg class="footer-join__icone" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
