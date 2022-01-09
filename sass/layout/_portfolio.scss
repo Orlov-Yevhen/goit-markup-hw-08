@@ -125,6 +125,10 @@
   @media screen and (min-width: 768px) {
     height: 155px;
   }
+
+  @media screen and (min-width: 1200px) {
+    height: auto;
+  }
 }
 
 .portfolio-title {

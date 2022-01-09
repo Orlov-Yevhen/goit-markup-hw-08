@@ -1504,6 +1504,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-item--height {
+    height: auto;
+  }
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
