@@ -1418,10 +1418,6 @@ footer {
 }
 
 .portfolio-photo-list {
-  /* display: flex;
-  flex-wrap: wrap; */
-  /* margin-top: -30px;
-  margin-left: -30px; */
   margin-bottom: -30px;
 }
 
@@ -1500,6 +1496,12 @@ footer {
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-item--height {
+    height: 155px;
+  }
 }
 
 .portfolio-title {
