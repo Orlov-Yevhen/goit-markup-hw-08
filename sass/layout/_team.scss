@@ -1,7 +1,5 @@
 .team {
   background-color: #f5f4fa;
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
 }
 
 .team__title {
@@ -36,7 +34,12 @@
   img {
     width: 100%;
   }
-  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 480px) {
     width: 450px;
   }

@@ -89,29 +89,30 @@
             </li>
           </ul>
         </div>
-        <div class="mob__menu-bottom"></div>
-        <ul class="list mob__list-conect">
-          <li class="mob__item-conect">
-            <a class="mob__tel link" href="tel:+380961111111"> +38 096 111 11 11</a>
-          </li>
-          <li class="mob__item-conect">
-            <a class="mob__mail link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul class="mob__list-social list">
-          <li class="mob__item-social">
-            <a class="mob__link-social link" href="">Instagram</a>
-          </li>
-          <li class="mob__item-social">
-            <a class="mob__link-social link" href="">Twitter</a>
-          </li>
-          <li class="mob__item-social">
-            <a class="mob__link-social link" href="">Facebook</a>
-          </li>
-          <li class="mob__item-social">
-            <a class="mob__link-social link" href="">LinkedIn</a>
-          </li>
-        </ul>
+        <div class="mob__menu-bottom">
+          <ul class="list mob__list-conect">
+            <li class="mob__item-conect">
+              <a class="mob__tel link" href="tel:+380961111111"> +38 096 111 11 11</a>
+            </li>
+            <li class="mob__item-conect">
+              <a class="mob__mail link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob__list-social list">
+            <li class="mob__item-social">
+              <a class="mob__link-social link" href="">Instagram</a>
+            </li>
+            <li class="mob__item-social">
+              <a class="mob__link-social link" href="">Twitter</a>
+            </li>
+            <li class="mob__item-social">
+              <a class="mob__link-social link" href="">Facebook</a>
+            </li>
+            <li class="mob__item-social">
+              <a class="mob__link-social link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -186,15 +187,24 @@
           <h2 class="direction__title">Чем мы занимаемся</h2>
           <ul class="direction__list list">
             <li class="direction__item">
-              <img src="./images/box1.jpg" alt="Примеры робот" width="370" height="294" />
+              <picture>
+                <source srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x" />
+                <img src="./images/box1-2x.jpg" alt="Примеры робот" />
+              </picture>
               <p class="direction__text">Мобильные приложения</p>
             </li>
             <li class="direction__item">
-              <img src="./images/box2.jpg" alt="Примеры робот" width="370" height="294" />
+              <picture>
+                <source srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x" />
+                <img src="./images/box2-2x.jpg" alt="Примеры робот" />
+              </picture>
               <p class="direction__text">Десктопные приложения</p>
             </li>
             <li class="direction__item">
-              <img src="./images/box3.jpg" alt="Примеры робот" width="370" height="294" />
+              <picture>
+                <source srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x" />
+                <img src="./images/box3-2x.jpg" alt="Примеры робот" />
+              </picture>
               <p class="direction__text">Дизайнерские решения</p>
             </li>
           </ul>
