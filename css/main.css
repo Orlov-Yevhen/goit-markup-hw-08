@@ -951,10 +951,6 @@ body {
   }
 }
 
-.team__list {
-  margin-bottom: -30px;
-}
-
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
@@ -1004,9 +1000,6 @@ body {
   }
 }
 
-/* .team__item:not(:last-child) {
-  margin-right: 30px;
-} */
 .team__box {
   padding-top: 30px;
   padding-bottom: 30px;
